@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.cont {
+    max-width: 600px;
+    margin: 50px auto;
+    background-image: url(./assets/images/instructor.png);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*
+  .container1 {
+    max-width: 300px;
+    margin: 50px auto;
+    background-image: url(./assets/images/instructor.png);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  */
+.profile-pic1 {
+    max-width: 500px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-right: 20%;
+}
+
+.prof {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #19586b, #11444d);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5S;
+}
+
+
+
+.feature-img {
+    width: 280px;
+    position: absolute;
+    bottom: 0;
+    right: 9%
+}
+
+.anim {
+    opacity: 0;
+    transform: translateY(100px);
+    animation: moveup 1.0s linear forwards;
+}
+
+.feature-img.anim {
+    animation-name: 1.5s;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

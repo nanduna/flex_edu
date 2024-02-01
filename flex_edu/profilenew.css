@@ -1,0 +1,126 @@
+.proback {
+    width: 1060px;
+    min-height: 100vh;
+    background-image: url(./assets/images/proback.jpg);
+
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+
+}
+
+.container {
+
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.profile h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.profile-header span {
+    font-size: 14px;
+    color: #888;
+}
+
+.profile-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-details li {
+    margin-bottom: 10px;
+}
+
+.profile-details .label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    color: rgb(88, 87, 87);
+}
+
+.profile-details .value {
+    display: inline-block;
+}
+
+.courses-section {
+    margin-top: 20px;
+}
+
+.courses-section h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.courses-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.courses-section li {
+    margin-bottom: 10px;
+}
+
+.courses-section .course-name {
+    font-size: 16px;
+}
+
+.courses-section .course-status {
+    display: inline-block;
+    font-size: 14px;
+    color: #888;
+}
+
+.feature-img {
+    width: 280px;
+    position: absolute;
+    bottom: 0;
+    right: 9%
+}
+
+.anim {
+    opacity: 0;
+    transform: translateY(100px);
+    animation: moveup 1.0s linear forwards;
+}
+
+.feature-img.anim {
+    animation-name: 1.5s;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

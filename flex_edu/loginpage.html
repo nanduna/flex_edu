@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+            /* Lighter background color */
+            font-family: 'Arial', sans-serif;
+            /* Use a more common font */
+        }
+
+        .container {
+            display: flex;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            width: auto;
+            /* Set a fixed width for the container */
+        }
+
+        .login-form {
+            flex: 1;
+            padding: 20px;
+            margin: 80px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            /* Darker text color */
+        }
+
+        .input-container {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            /* Slightly reduce margin for labels */
+            color: #555;
+            /* Dim the label color */
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            /* Increase padding for better input spacing */
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            /* Add a subtle border */
+            border-radius: 4px;
+            /* Rounded corners */
+        }
+
+        input[type="submit"] {
+            background-color: #2ecc71;
+            /* Green button color */
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            /* Add a smooth transition */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #27ae60;
+            /* Darker green on hover */
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            /* Add some spacing between buttons and form */
+        }
+
+        .button-container a {
+            text-decoration: none;
+            color: #3498db;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            /* Add a smooth transition */
+        }
+
+        .button-container a:hover {
+            color: #2980b9;
+            /* Darker blue on hover */
+        }
+
+
+
+        .image-container {
+
+            text-align: right;
+            padding: 20px;
+            display: flex;
+            width: auto;
+            height: 500px;
+            margin-left: 10px;
+            margin-top: 50px;
+
+        }
+
+        .image-container img {
+            width: auto;
+            height: 400px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="./assets/images/loginimage.jpg" alt="Image Description">
+        </div>
+
+        <div class="login-form">
+            <h2>Login</h2>
+            <form action="loginpage.php" method="post" onsubmit="return handleSubmit()">
+                <div class="input-container">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-container">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-container">
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+            <div class="button-container">
+                <a href="register.html">Sign Up</a>
+                <a href="#">Forgot Password</a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Page</title>
+
+    <script>
+    function checkPassword() {
+        // Get the values from the password and confirm password fields
+        var password = document.getElementById('password').value;
+        var confirmPassword = document.getElementById('confirmPassword').value;
+
+        // Check if the passwords match
+        if (password !== confirmPassword) {
+            alert('Passwords do not match!');
+            // Optionally, you can clear the fields or take other actions
+        }
+    }
+    </script>
+
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #fff;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        width: auto;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+
+    }
+
+    .input-container {
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    .input-container label {
+        display: block;
+    }
+
+    .input-container input,
+    .input-container select {
+        width: 95%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-shadow: #ccc;
+    }
+
+    .input-container input[type="submit"] {
+        background-color: rgb(10, 150, 40);
+        color: #fff;
+        cursor: pointer;
+        width: 50%;
+        margin: auto;
+        margin-left: 25%;
+    }
+
+    /* Style for the level select input */
+    .input-container select {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    /* Additional styling for better alignment of the level select input */
+    .input-container select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+    }
+
+    /* Style for the telephone input to show numeric keypad on mobile devices */
+    .input-container input[type="tel"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+    }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Registration</h2>
+        <form action="register.php" method="post">
+            <div class="input-container">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="input-container">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="input-container">
+                <label for="telephone">Telephone Number</label>
+                <input type="tel" id="telephone" name="telephone" required>
+            </div>
+            <div class="input-container">
+                <label for="level">Level</label>
+                <select id="level" name="level">
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="expert">Expert</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-container">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <div class="input-container">
+
+                <input type="submit" value="Register" onclick="checkPassword()">
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <img src="" alt="">
+    </div>
+
+    <footer>
+        <?php include './include/footer.php'; ?>
+    </footer>
+
+</body>
+
+
+</html>
